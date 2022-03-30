@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frogs</title>
     <script src="./frogs.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 id="score">0</h1>
-    <button id="btn-main" onclick="increment()">Catch frog</button>
+    <h1>Frogs: 
+        <span id="score"></span>
+    </h1>
+    <button id="btn-main" onclick="increment()">Catch Frog</button>
     <div>
-        <h2>Upgrades:</h2>
-        <button onclick="autoClick()">auto click</button>
+        <h2>Upgrades</h2>
+            <p>
+                <h3>Catchers:
+                    <span id="catchers"></span>
+                </h3>
+                <button onclick="buyCatchers()">Buy Catcher</button>
+            </p>
     </div>
 </body>
 </html>
